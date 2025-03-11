@@ -23,5 +23,4 @@ void main() {
   print('Age = $age');
   print('Height = $height');
   print('Marrital Status = $married');
-
 }

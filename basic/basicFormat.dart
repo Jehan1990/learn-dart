@@ -8,4 +8,5 @@ main()= Entry point fuction of a dart program. Every dart
 print()=is an in built dart function to print things on the console.
 {}=open and close parenthese are used to define the body
 of the function main()
+we need to put semicolon at the end of the statement.
 */

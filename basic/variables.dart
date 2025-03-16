@@ -44,7 +44,7 @@ print('\n--Reserved keyword as variable name--\n');
   //eg3
   int Class = 89;
   print(Class);
-  //eg4x
+  //eg4
   String If = 'Capt.Jehan';
   print(If);
 }

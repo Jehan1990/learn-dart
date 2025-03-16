@@ -10,6 +10,6 @@ void main() {
   print(foodPreference.replaceAll('pizza', 'pasta'));
 
   //indexOf method
-  int i=foodPreference.indexOf('love');
-  print(i+1);//index start from 0
+  int i = foodPreference.indexOf('love');
+  print(i + 1); //index start from 0
 }

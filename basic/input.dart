@@ -10,4 +10,4 @@ void main() {
   print('Name you have entered is: ${name.toUpperCase()}');
 }
 
-//change setting run in terminal code runner
+//change setting to run in terminal (code runner setting)

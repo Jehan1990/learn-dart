@@ -13,8 +13,6 @@
  r6jmm.com.com 4 basic type of variable:-String,int,double,bool
 */
 
-import 'dart:typed_data';
-
 void main() {
   String name = 'Jehan Ichhapporia'; //String literal
   int age = 45; //int literal
@@ -48,3 +46,4 @@ print('\n--Reserved keyword as variable name--\n');
   String If = 'Capt.Jehan';
   print(If);
 }
+

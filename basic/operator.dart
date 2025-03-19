@@ -35,4 +35,12 @@ void main() {
   double y = 5;
   y /= 2;
   print('(5 /= 2)=$y');
+
+  //operator precedence
+  print('\n--Operator Precedence--');
+  //PEMDAS=>Parentheses, Exponents, 
+  //Multiplication or Division, Addition or Subtraction
+
+  print(5+5*5-7);
+  print(4+8*2~/2-2);
 }

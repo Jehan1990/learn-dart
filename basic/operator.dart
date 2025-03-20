@@ -1,3 +1,5 @@
+import 'dart:math';
+
 //Operators
 
 void main() {
@@ -38,9 +40,10 @@ void main() {
 
   //operator precedence
   print('\n--Operator Precedence--');
-  //PEMDAS=>Parentheses, Exponents, 
+  //PEMDAS=>Parentheses, Exponents,
   //Multiplication or Division, Addition or Subtraction
 
-  print(5+5*5-7);
-  print(4+8*2~/2-2);
+  print(5 + 5 * 5 - 7);
+  print(4 + 8 * 2 ~/ 2 - 2);
+  print(pow(2, 2) + 4 * 2);
 }

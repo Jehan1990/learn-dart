@@ -1,0 +1,29 @@
+Statically v/s Dynamically Type
+
+Statically Type languages 
+1.Swift
+2.Kotlin
+3.Dart
+
+Dynamically Type Language
+1.Javascript
+2.Python
+
+Static typed= when types are checked at compiler time
+dynamically typed= when types are checked at runtime.
+
+Source code-> Compiler(Type checker)->Run(runtime checker)->Output
+
+As per above flowchart the Javascript wont have type checker as it is dynamically
+typed languages.
+
+Static type languages is a sound system.
+
+static languages advantages:-
+1.Discover type errors at compiler time
+2.More readable code
+3.Maintable code
+4.Complied code is more efficient.
+
+
+

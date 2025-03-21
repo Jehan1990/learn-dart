@@ -1,13 +1,12 @@
 ///Final Keyword
 
-/*
--The final keyword is used to declare a variable whose 
-value cannot be changed.
--final is used to declare a variable that is read-only.
--final is read-only, once assigned a value, it cannot be changed.
--prefer final than var whenever possible.
--final is more restrictive than var.
-*/
+/// -The final keyword is used to declare a variable whose 
+/// value cannot be changed.
+/// -final is used to declare a variable that is read-only.
+/// -final is read-only, once assigned a value, it cannot be changed.
+/// -prefer final than var whenever possible.
+/// -final is more restrictive than var.
+
 
 void main() {
   final String name = 'Peter'; //final with type declaration.

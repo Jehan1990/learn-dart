@@ -24,6 +24,3 @@ static languages advantages:-
 2.More readable code
 3.Maintable code
 4.Complied code is more efficient.
-
-
-

@@ -1,5 +1,9 @@
 void main(){
 
-const pizza='I love pizza';
-const topping='with toppings on it';
+const text='I love pizza';
+const topping='with tomatoes';
+var favourite = '$text $topping';
+final newText=favourite.replaceAll('pizza','pasta);
+favourite = 'i like curry now';
+print(newText);
 }

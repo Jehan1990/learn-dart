@@ -6,6 +6,7 @@
 /// -final is read-only, once assigned a value, it cannot be changed.
 /// -prefer final than var whenever possible.
 /// -final is more restrictive than var.
+/// -final is runtime constant.
 
 
 void main() {
@@ -22,4 +23,9 @@ void main() {
   var name1 = 'Jehan';//without final keyword
   name1='Ichhaporia';//changed the value of name1 as it is var and not final
   print(name1);
+
+  //example runtime constant
+  final title='Dart Programming';
+  final titleUpperCase=title.toUpperCase();//runtime constant
+  print(titleUpperCase);
 }

@@ -6,7 +6,7 @@
 ///   b. The final keyword is used to create a runtime constant.
 /// compiler time constant = is when code is compiled.
 /// runtime constant = is when code is running.
-
+/// prefer comst > final > var for better code.
 
 void main(){
   const title='Dart Programming';//compile time constant

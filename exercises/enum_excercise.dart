@@ -5,8 +5,6 @@ enum Operation{
   divide,
   }
 
-
-
 void main(){
   //const a=4,b=2;//plus or minus
   //const a=6,b=2;//multiply

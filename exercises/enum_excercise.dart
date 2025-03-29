@@ -1,4 +1,9 @@
-enum Operation{plus,minus,multiply,divide}
+enum Operation{
+  plus,
+  minus,
+  multiply,
+  divide,
+  }
 
 
 

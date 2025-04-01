@@ -8,6 +8,7 @@ void main(){
   var name='Jehan';
   /*name=10;  will create a compilertime error 
   as we are changing type of name*/
+  print(name);
   dynamic text='ichhaporia';
   print('String $text');
   text=34;

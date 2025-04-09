@@ -3,6 +3,7 @@
 ///List is collection of items with index stating from zero
 ///list is declared with items in [].
 ///index in list start from 0...
+///list can contain duplicate values
 
 void main() {
   //Declare a list

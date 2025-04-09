@@ -8,12 +8,11 @@ void main(){
 
   numbers[2]=89;//Valid code as numbers is var
   numbers1[2]=97;//Valid even if declared as final
-  //number2[2]=800;
+  //number2[2]=800;---> Invalid code at runTime
   //valid at comilerTime but invalid at runTime as declared as const
 
 print(numbers);
 print(numbers1);
 print(number2);
-
 
 }

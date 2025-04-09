@@ -4,71 +4,67 @@
 ///list is declared with items in [].
 ///index in list start from 0...
 
+void main() {
+  //Declare a list
 
-void main(){
+  var cites = ['London', 'Paris', 'Mumbai'];
 
-//Declare a list
+  print(cites); //print list
 
-var cites=['London','Paris','Mumbai'];
+  //Change iteam in the list
+  cites[1] = 'New York';
+  print(cites); //print revised list
 
-print(cites);//print list
+  //print item from the list using index
+  print(cites[2]);
 
-//Change iteam in the list
-cites[1]='New York';
-print(cites);//print revised list
+  //list methods
+  print('\n---List methods---\n');
 
-//print item from the list using index
-print(cites[2]);
+  //print the number of items in the list using length method
+  print('length method:${cites.length}');
 
-//list methods
-print('\n---List methods---\n');
+  //Add item to the list at the end
+  cites.add('Delhi');
+  print('add method:$cites');
 
-//print the number of items in the list using length method
-print('length method:${cites.length}');
+  //Add item to the list at a particular position
+  cites.insert(2, 'Tokyo');
+  print('insert method:$cites');
 
-//Add item to the list at the end
-cites.add('Delhi');
-print('add method:$cites');
+  //Check if list is empty
+  print('isEmpty method:${cites.isEmpty}');
 
-//Add item to the list at a particular position
-cites.insert(2,'Tokyo');
-print('insert method:$cites');
+  //Check if list is not empty
+  print('isEmpty method:${cites.isNotEmpty}');
 
-//Check if list is empty
-print('isEmpty method:${cites.isEmpty}');
+  //Check first item in list
+  print('first method:${cites.first}');
 
-//Check if list is not empty
-print('isEmpty method:${cites.isNotEmpty}');
+  //Check last item in list
+  print('last method:${cites.last}');
 
-//Check first item in list
-print('first method:${cites.first}');
+  //remove iteam at a particular index in the list
+  cites.removeAt(1);
+  print('removeAt method:$cites');
 
-//Check last item in list
-print('last method:${cites.last}');
+  //remove all in the list
+  List num = [1, 4, 6, 78];
+  print('list of numbers:$num');
+  num.clear();
+  print('clear method for above list:$num');
 
-//remove iteam at a particular index in the list
-cites.removeAt(1);
-print('removeAt method:$cites');
+  //Find iteam in a list
+  print('contain method:${cites.contains('London')}');
 
-//remove all in the list
-List num=[1,4,6,78];
-print('list of numbers:$num');
-num.clear();
-print('clear method for above list:$num');
+  //Find index of an iteam in a list
+  print('contain method:${cites.indexOf('Mumbai')}');
 
-//Find iteam in a list
-print('contain method:${cites.contains('London')}');
-
-//Find index of an iteam in a list
-print('contain method:${cites.indexOf('Mumbai')}');
-
-/*If we try to get index of an iteam not in the list
+  /*If we try to get index of an iteam not in the list
 we get -1*/
-print('contain method:${cites.indexOf('delhi')}');
+  print('contain method:${cites.indexOf('delhi')}');
 
-//Sort a list
-cites.sort();
-print('sort method:$cites');
-
-
+  //Sort a list
+  cites.sort();
+  print('sort method:$cites');
 }

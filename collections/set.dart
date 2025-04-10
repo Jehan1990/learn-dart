@@ -40,6 +40,23 @@ void main() {
 
   var set1={1,2,3,4},set2={3,4,5,6};
 
-  //Union
+  //Union-will adds items of both sets together to make one set withot duplicates
+
+  print('Union: ${set1.union(set2)}');
+
+  //Intersection-will make a set which has comman items in both sets 
+
+  print('Intersection:  ${set1.intersection(set2)}');
+
+  //Deifference-will make a set which has diffrerent items in both the sets
+
+  print('Difference:  ${set1.difference(set2)}');
+
+  print('For Loop With Set:-');
+  for(var count in countries){
+    print(count);
+  }
+
+  
 
 }

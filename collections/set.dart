@@ -57,6 +57,8 @@ void main() {
     print(count);
   }
 
-  
+  const Set newSet={2,4,5,8};
+
+  print(newSet);
 
 }

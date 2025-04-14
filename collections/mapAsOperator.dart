@@ -12,13 +12,15 @@ void main() {
   var carMaker = car['maker'] as String;
   //Now compiler know this is a String and will
   //give access to all String Methods and properties
+  print(carMaker.length);
 
   var carYear = car['year'] as int;
   //Now compiler know this is a Integer and will
   //give access to all Interger Methods and properties
-
+  print(carYear.toString());
+  
+  
   //Runtime type
-
   var carMaker1 = car['maker'],carYear1=car['year'];
   print(carMaker1.runtimeType);
   print(carYear1.runtimeType);

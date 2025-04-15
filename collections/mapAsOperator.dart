@@ -17,11 +17,11 @@ void main() {
   var carYear = car['year'] as int;
   //Now compiler know this is a Integer and will
   //give access to all Interger Methods and properties
-  print(carYear.toString());
+  print(carYear.toDouble());
   
   
   //Runtime type
   var carMaker1 = car['maker'],carYear1=car['year'];
-  print(carMaker1.runtimeType);
-  print(carYear1.runtimeType);
+  //carMaker1 & carYear1 dont have string and 
+  //Int methods and property
 }

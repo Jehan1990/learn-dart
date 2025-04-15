@@ -21,7 +21,7 @@ void main(){
   print('Amended: $person');
 
   //Return null if key not found
-  print('Sex: ${person['sex']}');
+  print('(Null example) Sex: ${person['sex']}');
 
   /*Iterable: List and sets are iterable while we need to 
   modify maps to become iterable*/

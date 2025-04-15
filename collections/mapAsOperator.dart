@@ -24,4 +24,6 @@ void main() {
   var carMaker1 = car['maker'],carYear1=car['year'];
   //carMaker1 & carYear1 dont have string and 
   //Int methods and property
+
+  print('$carMaker1 $carYear1');
 }

@@ -10,7 +10,7 @@
   - 'Jehan Ichhaporia'=Value stored in variable(also called 
     string literal)
 
- r6jmm.com.com 4 basic type of variable:-String,int,double,bool
+ 4 basic type of variable:-String,int,double,bool
 */
 
 void main() {
@@ -32,7 +32,7 @@ void main() {
   change the first letter to capital letter if lowercase and 
   vice versa.
   */
-print('\n--Reserved keyword as variable name--\n');
+  print('\n--Reserved keyword as variable name--\n');
   //eg1
   double Int = 34.6;
   print(Int);
@@ -46,4 +46,3 @@ print('\n--Reserved keyword as variable name--\n');
   String If = 'Capt.Jehan';
   print(If);
 }
-

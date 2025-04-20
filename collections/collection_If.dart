@@ -1,10 +1,11 @@
 ///Collection-if:- if statement inside Collections like list,set,map
 
+// ignore_for_file: dead_code
 
 void main() {
   const addBlue = false;
   const addRed = true;
-  
+
   //conventional method
   final colors = ['green', 'grey'];
   if (addBlue) {
@@ -16,16 +17,7 @@ void main() {
   print(colors);
 
   //collection if method
-  final colors2=[
-    'green', 
-    'grey',
-    if(addBlue)
-    'blue',
-    if(addRed)
-    'red'
-    ];
-  
+  final colors2 = ['green', 'grey', if (addBlue) 'blue', if (addRed) 'red'];
+
   print(colors2);
-
-
 }

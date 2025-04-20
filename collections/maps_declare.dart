@@ -15,12 +15,11 @@ void main() {
 
   //3 declare map
   Map car2 = {'length': 4.6, 'year': 2002};
-  
+
   print(car2);
   //4 declare map
 
   var person1 = {'age': 56, 'height': 5.8, 'hairColor': 'black'};
 
-print(person1);
-
+  print(person1);
 }

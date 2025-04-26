@@ -13,5 +13,11 @@ void main(List<String> arguments) {
     //non zero is when there is an error. exit is from dart:io library
   }
   final inputFile = arguments.first;
-  print(inputFile);
+
+  //Read the csv file
+
+  final lines = File(inputFile).readAsLinesSync();
+  for (var line in lines) {
+    print(line);
+  }
 }

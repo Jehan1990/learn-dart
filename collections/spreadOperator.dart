@@ -3,6 +3,7 @@
 
 void main() {
   final parenList = ['Jehan', 'Binu'];
+  print('Main List:$parenList');
   final addExtracolors = true;
   final extralist = ['Zia', 'Hoshang'];
   final editedList = ['Jehan', 'Binu', extralist];
@@ -49,13 +50,13 @@ void main() {
 
   print('\n--Using spread with Map--');
 
-  const rating2 = [2.3, 4.5, 4.8, 4.9];
+  const rating2 = [1.3, 4.0, 4.8, 4.7];
   final restaurants1 = {
     'name': 'Gloria',
     'cuisine': 'Muglai',
-    if (rating.length > 3) ...{
+    if (rating2.length > 3) ...{
       //spread and if
-      'rating': rating,
+      'rating': rating2,
       'isPolular': true,
     },
   };

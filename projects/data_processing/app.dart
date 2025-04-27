@@ -23,17 +23,29 @@ void main(List<String> arguments) {
   //Part 4:-Reading the csv file.CSV=Comma Separated Values
 
   final lines = File(inputFile).readAsLinesSync();
+  //reads the file as lines
 
-  final durationByTag = <String, double>{};
-  lines.removeAt(0);
+  final totalDurationByTag = <String, double>{};
+  //create an empty Map with type String=tag,Double=for duration
+  lines.removeAt(0); //removes the first row which has the title
   for (var line in lines) {
+    //iterates all the liness
     final value = line.split(',');
     final durationStr = value[3].replaceAll('"', '');
     final duration = double.parse(durationStr);
-    final tag = value[5];
-    durationByTag[tag] = duration;
+    final tag = value[5].replaceAll('"', '');
+    final previousTotal = totalDurationByTag[tag];
+    if (previousTotal == null) {
+      totalDurationByTag[tag] = duration;
+    } else {
+      totalDurationByTag[tag] = previousTotal + duration;
+    }
   }
-  print(durationByTag);
+  for (var entry in totalDurationByTag.entries) {
+    final durationFormat = entry.value.toStringAsFixed(1);
+    final tag = entry.key == '' ? 'Unallocated' : entry.key;
+    print('$tag: ${durationFormat}h');
+  }
 }
 
 /*Psedocode:-

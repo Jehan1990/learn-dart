@@ -46,12 +46,16 @@ void main(List<String> arguments) {
       //if true add duration
     } else {
       totalDurationByTag[tag] = previousTotal + duration;
-      //if false (not null) then add duration
+      //if false (not null) then add duration + previous time
     }
   }
+  //print in map format    print(totalDurationByTag);
+
+  //This part removes data from map and prints it
   for (var entry in totalDurationByTag.entries) {
     final durationFormat = entry.value.toStringAsFixed(1);
     final tag = entry.key == '' ? 'Unallocated' : entry.key;
+    //tenarry operator
     print('$tag: ${durationFormat}h');
   }
 }

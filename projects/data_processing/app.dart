@@ -24,21 +24,29 @@ void main(List<String> arguments) {
 
   final lines = File(inputFile).readAsLinesSync();
   //reads the file as lines
-
   final totalDurationByTag = <String, double>{};
   //create an empty Map with type String=tag,Double=for duration
   lines.removeAt(0); //removes the first row which has the title
   for (var line in lines) {
-    //iterates all the liness
+    //iterates all the (String)lines of the file
     final value = line.split(',');
+    //array of string per line without ','
     final durationStr = value[3].replaceAll('"', '');
+    //get the duration as string without ""
     final duration = double.parse(durationStr);
+    //convert duration string to double format, to use as value in map
     final tag = value[5].replaceAll('"', '');
-    final previousTotal = totalDurationByTag[tag];
+    //get tag from value array to use as key in map
+    final previousTotal = totalDurationByTag[tag]; //is a type double
+    //create variable previousTotal to assign tag value in empty map
+
     if (previousTotal == null) {
+      //check for null
       totalDurationByTag[tag] = duration;
+      //if true add duration
     } else {
       totalDurationByTag[tag] = previousTotal + duration;
+      //if false (not null) then add duration
     }
   }
   for (var entry in totalDurationByTag.entries) {

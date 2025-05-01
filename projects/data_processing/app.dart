@@ -27,7 +27,10 @@ void main(List<String> arguments) {
   final totalDurationByTag = <String, double>{};
   //create an empty Map with type String=tag,Double=for duration
   lines.removeAt(0); //removes the first row which has the title
+  var totalTime=0.0;
+
   for (var line in lines) {
+    
     //iterates all the (String)lines of the file
     final value = line.split(',');
     //array of string per line without ','
@@ -48,8 +51,10 @@ void main(List<String> arguments) {
       totalDurationByTag[tag] = previousTotal + duration;
       //if false (not null) then add duration + previous time
     }
+    totalTime += duration;
   }
   //print in map format    print(totalDurationByTag);
+
 
   //This part removes data from map and prints it
   for (var entry in totalDurationByTag.entries) {
@@ -58,6 +63,7 @@ void main(List<String> arguments) {
     //tenarry operator
     print('$tag: ${durationFormat}h');
   }
+  print('Total Duration: ${totalTime.toStringAsFixed(1)}h');
 }
 
 /*Psedocode:-

@@ -27,7 +27,8 @@ void main(List<String> arguments) {
   final totalDurationByTag = <String, double>{};
   //create an empty Map with type String=tag,Double=for duration
   lines.removeAt(0); //removes the first row which has the title
-  var totalTime=0.0;
+  
+  var totalTime=0.0;//variable to hold total duration
 
   for (var line in lines) {
     
@@ -63,6 +64,7 @@ void main(List<String> arguments) {
     //tenarry operator
     print('$tag: ${durationFormat}h');
   }
+  //print total duration 
   print('Total Duration: ${totalTime.toStringAsFixed(1)}h');
 }
 

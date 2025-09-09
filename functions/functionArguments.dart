@@ -1,3 +1,6 @@
+// Arguments in dart can be named or positional
+// Here we are using positional arguments
+
 void main() {
   const name = 'Jehan', age = 35;
   describe(name, age);
@@ -11,3 +14,6 @@ void describe(String name, int age) {
   print('My name is $name and I am $age years old.');
   //fuction body
 }
+
+//positional arguments must be passed in the same order as defined in the function
+//if you want to use named arguments, use curly braces {} in the function definition

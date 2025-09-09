@@ -15,4 +15,5 @@ String s1 = '''
 ''';
   print(s+'\n');
   print(s1);
+  print(s+s);
 }

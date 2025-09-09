@@ -6,7 +6,7 @@ enum Move{rock,paper,scissors}
 void main(){
   final rng=Random();
   while (true) {
-    stdout.write('Rock,Paper or Scissors? (r/p/s) ');
+    stdout.write('Rock,Paper or Scissors? (r/p/s) press q to quit the game ');
     final input = stdin.readLineSync();
     if(input=='r'||input=='p'||input=='s'){
       

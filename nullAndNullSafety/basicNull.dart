@@ -38,11 +38,10 @@ void main(){
   */
 
   //num4=3;
-
-  if(num4 == null){
-    print('num4 is null');
+  if(num4==null){
+    print('its empty(null)');
   }else{
-    print(num4+a);
+  print(num4+a);
   }
 
   //Flow analysis uses definite assignment.

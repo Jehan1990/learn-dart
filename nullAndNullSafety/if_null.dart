@@ -6,6 +6,7 @@ void main() {
   //x = 5;
 
   //using tenary operator for dealing with null condition
+  // ignore: unnecessary_null_comparison
   int y = x == null ? 0 : x;
   print(y);
 

@@ -1,5 +1,7 @@
 
 
+// ignore_for_file: unnecessary_null_comparison
+
 ///Basic of null- 
 /*In the earlier versions of dart, null was allowed meaning we could declare
 int a=null; however after dart 3 there is null safety imposed. Means we cannot 

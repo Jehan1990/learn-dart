@@ -1,34 +1,27 @@
 //Inner functions are defined within a scope
 //Global Fuction can be called from inner fuction
 //Inner fuction cannot be called from Global or parent fuction
-
+//scope is between {}
 var gv = 56; //Global Variable
 
-void foo() {
-  print(gv);
-}
-
 void main() {
-  foo(); // calling Global fuction
-
+  const a = 4;
+  print(gv);
+  print(a);
   //inner fuction1
-  void foo1() {
-    foo();
-    print('Inner fuction1');
-  }
-
-  foo1(); //Calling Inner fuction1
-
-  //inner fuction2
-  void foo2() {
-    foo1();
-    print('Inner fuction2');
-    void foo3() {
-      print('Third Inner Fuction');
+  void foo(int b) {
+    print(gv);
+    print(a);
+    print(b);
+    void foo1(int c) {
+      print(gv);
+      print(a);
+      print(b);
+      print(c);
     }
-    foo3();
+
+    foo1(44);
   }
 
-  //foo3() cannot be called from main method but can be called from foo2()
-  foo2(); //calling inner fuction2
+  foo(5); //Calling Inner fuction1
 }

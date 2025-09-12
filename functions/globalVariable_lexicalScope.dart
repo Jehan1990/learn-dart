@@ -24,7 +24,8 @@ void main() {
   if (a1 < 100) {
     var b1 = 90; //withing the scope of if-else
     //b1 cannot be used outside
+    print(b1);
     print(a1);
-    print(b);//using global variable inside if-else
+    print(b); //using global variable inside if-else
   }
 }

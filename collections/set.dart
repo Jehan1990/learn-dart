@@ -38,13 +38,13 @@ void main() {
 
   //Operation with Sets(Union,Differnce,Intersection)
 
-  var set1={1,2,3,4},set2={3,4,5,6};
+  var set1 = {1, 2, 3, 4}, set2 = {3, 4, 5, 6};
 
   //Union-will adds items of both sets together to make one set withot duplicates
 
   print('Union: ${set1.union(set2)}');
 
-  //Intersection-will make a set which has comman items in both sets 
+  //Intersection-will make a set which has comman items in both sets
 
   print('Intersection:  ${set1.intersection(set2)}');
 
@@ -53,12 +53,11 @@ void main() {
   print('Difference:  ${set1.difference(set2)}');
 
   print('For Loop With Set:-');
-  for(var count in countries){
+  for (var count in countries) {
     print(count);
   }
 
-  const Set newSet={2,4,5,8};
+  const Set newSet = {2, 4, 5, 8};
 
   print(newSet);
-
 }

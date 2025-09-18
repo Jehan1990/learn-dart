@@ -1,10 +1,12 @@
 ///Maps
 ///Maps is also called Dictionary in other languages
 ///Maps is key - value pair
+///Maps are displayed as {} instead on []
 
 void main() {
   //1 declare map
   Map<String, dynamic> person = {'name': 'Jehan', 'age': 34, 'height': 5.8};
+  print(person);
 
   print('${person['name']} ${person['age']} ${'height'}');
 

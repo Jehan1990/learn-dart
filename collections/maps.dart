@@ -25,6 +25,7 @@ void main() {
 
   print(person1);
 
+  // ignore: unused_local_variable
   var person2 = {1: 'Jehan', 2: 'Binu', 3: 'Jehan'};
   
 }

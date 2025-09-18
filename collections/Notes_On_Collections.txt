@@ -1,0 +1,8 @@
+Collections.
+1-List,2-Map,3-Set
+List-[a,b,c],Map-{a:A,b:B,c:C},set-{a,b,c}
+
+List - can have duplicates,has and index, items are in order
+Set- is like list but has no duplicates,no index,are are not in order
+Map- is like key:value type. It can have only unique key but 
+    can have dupliate values,not have an index.

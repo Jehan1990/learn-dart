@@ -1,5 +1,6 @@
 //Annonymous Fuction
 
+
 void main() {
   //Annonymous Fuction is ()=>
   var message = (name) => print('hi I am $name');
@@ -11,4 +12,20 @@ void main() {
   print(message.runtimeType); //(dynamic)()=>void
   print(message1.runtimeType); //(dynamic)()=>String
   print(message2.runtimeType); //(double)()=>String
+
+  var cube = (int n) {
+    return n * n * n;
+  }; //variable cube has a fuction type.
+  //int Function(int) means returns integer & function takes integer as argument.
+
+  print(cube(87));
+  print(cube.runtimeType);
+
+  int Function(int) sqare = (x) {
+    //Declaring with type
+    return x * x;
+  };
+
+  print(sqare(4));
+  
 }

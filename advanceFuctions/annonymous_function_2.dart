@@ -35,5 +35,5 @@ void main() {
   operation(add, 5, 8);
   operation(sub, 5, 8);
   operation(multi, 0.78, 8);
-  operation(divide, 5, 8);
+  operation(divide, 0.75, 8);
 }

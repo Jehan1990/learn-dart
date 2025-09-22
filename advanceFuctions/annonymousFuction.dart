@@ -1,6 +1,5 @@
 //Annonymous Fuction
 
-
 void main() {
   //Annonymous Fuction is ()=>
   var message = (name) => print('hi I am $name');
@@ -27,5 +26,25 @@ void main() {
   };
 
   print(sqare(4));
-  
+
+  //Annonymous function without return or arguments
+  var sayHi = () {
+    print('Welcome');
+  };
+
+  sayHi();
 }
+
+
+/*
+Notes on Annonymous Fuctions:
+
+Syntax-
+1-(argument){statement};
+2-(argument)=>statement;
+
+Annonymous are like 
+
+
+ */
+

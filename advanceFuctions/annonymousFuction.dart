@@ -41,9 +41,15 @@ Notes on Annonymous Fuctions:
 
 Syntax-
 1-(argument){statement};
-2-(argument)=>statement;
+2-(argument)=>statement;fat arrow notation
 
-Annonymous are like 
+Annonymous are like normal function but without name.
+The can be called in 2 ways:-
+1: By assigning variable to in
+2: By using them in function which takes function as arguments.
+
+function are first class in dart.
+
 
 
  */

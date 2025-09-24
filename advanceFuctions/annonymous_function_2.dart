@@ -1,3 +1,5 @@
+import 'fuctionAsArgument.dart';
+
 void main() {
   //Calling using variable:-
 
@@ -22,18 +24,29 @@ void main() {
 
   //Example 2
 
+  var add = (a, b) => a + b;
+  var sub = (a, b) => a - b;
+  var multi = (a, b) => a * b;
+  var divide = (a, b) => a / b;
 
-  var add = (a,b) => a + b;
-  var sub = (a,b) => a - b;
-  var multi = (a,b) => a * b;
-  var divide = (a,b) => a / b;
-
-  void operation(dynamic Function(dynamic,dynamic) operation, x, y) {
+  void operation(dynamic Function(dynamic, dynamic) operation, x, y) {
     // Example usage
-    print(operation(x,y));
+    print(operation(x, y));
   }
+
   operation(add, 5, 8);
   operation(sub, 5, 8);
   operation(multi, 0.78, 8);
   operation(divide, 0.75, 8);
+
+  //Example 3
+
+  var intro = () => 'Hello! how are you my age is';
+  //Annonymous function without return
+
+  void greet(String name, String Function() msg) {
+    print('${msg()} $name');
+  }
+
+  greet('Jehan', intro);
 }

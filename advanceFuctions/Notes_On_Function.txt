@@ -1,0 +1,5 @@
+Advance Functions
+
+1-Annonymous Function
+Dont have a name, used by referening to a variable or used 
+as arugemnt in a function.

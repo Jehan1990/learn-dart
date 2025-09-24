@@ -1,4 +1,3 @@
-import 'fuctionAsArgument.dart';
 
 void main() {
   //Calling using variable:-

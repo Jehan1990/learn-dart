@@ -14,8 +14,7 @@ class BankAccount {
 void main() {
   final bankAccount = BankAccount();
   print(bankAccount.balance); //access balance property of intance
-  
-  
+
   bankAccount.balance = 100; //change balance property of intance
   print(bankAccount.balance);
 
@@ -26,5 +25,5 @@ void main() {
 
   /*changing the property of instance does not 
   change the property of the class */
-  print('Original Class property:${BankAccount().balance}');
+  print("Original Class property:${BankAccount().balance}");
 }

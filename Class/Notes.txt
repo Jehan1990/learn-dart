@@ -1,0 +1,2 @@
+-Use classes in place of maps to use type safety at
+our advantage.

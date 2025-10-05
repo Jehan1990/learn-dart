@@ -7,7 +7,7 @@ class Temperature {
   double celcius;
 
   //Method 2:
-  //to use this format for the constructor property of celcius
+  //to use this format for the constructor, property of celcius
   //has to be initialised as shown below
   // Temperature.farenhite(double farenhite) {
   //   this.celcius = (farenhite - 32) / 1.8;

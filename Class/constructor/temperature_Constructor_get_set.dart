@@ -1,4 +1,4 @@
-import 'dart:ffi';
+
 
 ///Getter uses get keywordto get a computed variable
 ///the normal variable is a stored variable

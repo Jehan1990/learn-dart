@@ -6,6 +6,8 @@
 ///Getter is use create a computed variabble.
 ///Setter is use to set the value of the property
 
+// ignore_for_file: unused_local_variable
+
 class Temperature {
   //Named Constructor
   Temperature.celcius(this.celcius);

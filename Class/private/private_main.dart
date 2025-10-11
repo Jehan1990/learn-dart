@@ -1,7 +1,9 @@
 
 
+import 'private_variable_methods.dart';
+
 void main() {
   final bankAccount = BankAccount(100);
-  
-  bankAccount._balance = 10000;
+  bankAccount.deposit(100);
+  print(bankAccount.balance);
 }

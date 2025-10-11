@@ -12,6 +12,9 @@ class BankAccount {
   //Properties
   double _balance;
 
+  //getter
+  double get balance => _balance;
+
   //Methods
   void deposit(double amount) {
     _balance += amount;
@@ -23,5 +26,3 @@ class BankAccount {
     }
   }
 }
-
-

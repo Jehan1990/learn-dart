@@ -10,8 +10,7 @@ void main() {
   print(x);
   x = 5;
   print(x);
-  x ??= 6;
-  ///dead code because ??= is used to assign value 
+   ///dead code because ??= is used to assign value
   ///to a variable which is null since x is not null its a dead code
   print("dead code:\"$x\"");
   //use \ backslash to escape

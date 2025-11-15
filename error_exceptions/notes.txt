@@ -1,0 +1,16 @@
+In our programs we often say that an exception or an error has occurred. these two words are often used interchangeably, but they actually have different meanings, and they apply to different cases.
+
+The difference between exceptions and errors:-
+
+Error:-
+	Is a programmer mistake, telling us that we did something wrong, and it is our job to address it by fixing our code. 
+	examples:- 
+-	calling a function with invalid arguments.
+-	trying to access a list with an index out of bounds. 
+
+Exception:-
+	Is a failure condition, telling us that something unexpected happened (out of our control), and the way we deal with programmer errors is very different from the way we deal with exceptions. 
+
+-	Quite often when an error occurs, our program should terminate immediately because it is not safe to recover from it. 
+-	On the other hand, when an exception occurs, we should catch it and present a human readable message so that the user know that something went wrong.
+-	When an exception happens, our program or up should be able to resume normally.
